@@ -150,18 +150,24 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="https://formsubmit.co/7ac613e66a98c62d73591903418c8a84" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Full name">
-                <input type="email" placeholder="Email address">
+                <input type="text" placeholder="Full name" name="name">
+                <input type="email" placeholder="Email Address" name="email">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile number">
-                <input type="text" placeholder="Email subject">
+                <input type="number" placeholder="Mobile number" name="number">
+                <input type="text" placeholder="Subject message" name="subject">
             </div>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <textarea id="" cols="30" rows="10" placeholder="Write your message here." name="comments"></textarea>
             <input type="submit" value="Send message" class="btn">
+
+            <input type="hidden" name="_next" value="https://franlexram.github.io/Updated-Portfolio-2023/">
+            <input type="hidden" name="_subject" value="New contact from your portfolio!">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse" value="Thank You for contacting me. I'll get back to You as soon as possible.">
+            <!-- <input type="hidden" name="_captcha" value="false"> -->
         </form>
     </section>
 
